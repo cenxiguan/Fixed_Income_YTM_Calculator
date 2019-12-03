@@ -3,23 +3,55 @@
 </head>
 
 <body>
-  <h1>Welcome to use Rong's Yield to Maturity calculater!</h1>
-
-  {{> hello}}
+  <div class = "jumbotron">
+    <h2>Welcome to use Rong's Yield to Maturity calculator!</h2>
+  </div>
+  {{> calc}}
   {{> info}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="calc">
+  <div class="container container-sm">
+    <table class="table table-responsive">
+    <tr>
+      <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;text-align:right">Annual Rate:</div>
+        <div class="col-sm-2" style="background-color:lavenderblush;text-align:center"> </div>
+      </div>
+    </tr>
+    <tr>
+      <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;text-align:right">Maturity in Years:</div>
+        <div class="col-sm-2" style="background-color:lavenderblush;text-align:center"> </div>
+      </div>
+    </tr>
+    <tr>
+      <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;text-align:right">Par Value:</div>
+        <div class="col-sm-2" style="background-color:lavenderblush;text-align:center"> </div>
+      </div>
+    </tr>
+    <tr>
+      <div class="row">
+        <div class="col-sm-2" style="background-color:lavender;text-align:right">PMarket Value:</div>
+        <div class="col-sm-2" style="background-color:lavenderblush;text-align:center"> </div>
+      </div>
+    </tr>
+  </table>
+  <button class="btn btn-primary btn-lg">Calculate</button>
+  <p>Yield to Maturity is {{counter}}</p>
+</div >
+
+
+
 </template>
 
 <template name="info">
-  <h2>Learn Meteor!</h2>
+  <h2>Author's information</h2>
   <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+    <li>Email: rongguan2018@gmail.com</li>
+    <li><a href="https://www.linkedin.com/in/rongguan/" target="_blank">Rong's linkedin</a></li>
+    <li><a href="https://github.com/cenxiguan" target="_blank">Rong's GitHub Repository</a></li>
+    <li><a href="https://sites.google.com/brandeis.edu/rongs3danimations" target="_blank">Rong's Project Demos</a></li>
   </ul>
 </template>
